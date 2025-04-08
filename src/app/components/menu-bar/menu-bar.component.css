@@ -1,0 +1,26 @@
+.container__menu{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 999;
+    background-color: #272727;
+    width: 100%;
+
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.212);
+    align-items: center;
+}
+
+.logo__menu{
+    justify-content: left;
+    margin: 10px;
+}
+
+.photo-user__menu {
+    display: flex;
+    justify-content: flex-end; /* Alterado de 'right' para 'flex-end' */
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+}
+
+.photo-user__menu app-menu-bar-user{
+    margin-right: 20px;
+}

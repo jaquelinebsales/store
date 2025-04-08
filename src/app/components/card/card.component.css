@@ -1,0 +1,25 @@
+.card__container{
+    position: relative;/*O posicionamento vai sr relativo as outros componentes, faendo com que o card sempre fique atras dos componentes filhos*/
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.425);
+    width: 350px;
+    height: 500px;
+
+    display: flex;
+    overflow: hidden;/*tudo que sair do tamanho da caixa ficará escondido*/
+    margin: 20px 0px;
+}
+
+.card__img{
+    min-width: 100%;
+    min-height: 100%;
+    transition: transform .8s;
+}
+
+.card__img:hover{
+    transform: scale(1.1);
+}
+
+.app-card-pricing{
+    border: 1px solid red;
+}
