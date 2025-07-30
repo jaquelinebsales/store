@@ -1,0 +1,2 @@
+export default `*{padding:0;margin:0;border:0;box-sizing:border-box}body{background:#2a0c4e;background:linear-gradient(170deg,#2a0c4e,#51355a 50%);font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}
+`;
