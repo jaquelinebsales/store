@@ -15,7 +15,7 @@
           "options": {
             "outputPath": "dist/store",
             "index": "src/index.html",
-            "browser": "dist/store/browser/",
+            "browser": "dist/store/browser",
             "polyfills": [
               "zone.js"
             ],
