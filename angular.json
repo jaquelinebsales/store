@@ -7,7 +7,7 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "src/",
       "prefix": "app",
       "architect": {
         "build": {
@@ -56,7 +56,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
+              "optimization": true,
               "extractLicenses": false,
               "sourceMap": true
             }
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "playstation-store-angular:build:production"
+              "buildTarget": "store:build:production"
             },
             "development": {
-              "buildTarget": "playstation-store-angular:build:development"
+              "buildTarget": "store:build:development"
             }
           },
           "defaultConfiguration": "development"
