@@ -1,6 +1,14 @@
-p{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+div{
     background-color: black;
-    color: white;
-    padding: 10px;
-    text-align: right;
+    padding: .25rem 0rem;
+    font-family: "Montserrat", sans-serif;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+div img{
+    width: 95px;
 }

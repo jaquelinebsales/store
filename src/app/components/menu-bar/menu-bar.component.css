@@ -1,26 +1,19 @@
 .container__menu{
     display: flex;
     flex-direction: row;
-    position: fixed;
-    z-index: 999;
-    background-color: #272727;
+    background-color: #ffffff;
     width: 100%;
-
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.212);
+    padding: 10px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
     align-items: center;
+    justify-content: center;
 }
 
 .logo__menu{
-    justify-content: left;
-    margin: 10px;
-}
-
-.photo-user__menu {
+    position: absolute;
     display: flex;
-    justify-content: flex-end; /* Alterado de 'right' para 'flex-end' */
-    width: 100%; /* Garante que o container ocupe toda a largura disponível */
-}
-
-.photo-user__menu app-menu-bar-user{
-    margin-right: 20px;
+    left: 0;
+    margin: 15px;
 }
