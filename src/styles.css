@@ -7,6 +7,6 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom, rgb(228, 227, 227), rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom, rgb(221, 221, 221), rgb(243, 243, 243));
     font-family: 'Segoe UI',system-ui, -apple-system, BlinkMacSystemFont,  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
