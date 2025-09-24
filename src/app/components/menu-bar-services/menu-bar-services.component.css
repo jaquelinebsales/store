@@ -40,7 +40,7 @@ ul.list__services li button{
 
 .others__service button.iniciar_sessao{
     margin-right: 1.25rem;
-    background-color: rgb(30, 118, 218);
+    background-color: #0070cc;
     color: white;
     padding: 1.6px 8px;
     font-size: 1.1em;

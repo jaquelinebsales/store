@@ -9,7 +9,8 @@ import { MenuBarServicesComponent } from './components/menu-bar-services/menu-ba
   selector: 'app-root',
   imports: [RouterOutlet, MenuBarComponent, HomeComponent, SonyBarComponent, MenuBarServicesComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  standalone: true
 })
 export class AppComponent {
   title = 'playsatation-store-angular';

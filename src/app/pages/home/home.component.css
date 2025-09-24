@@ -1,6 +1,9 @@
 .container__home{
     width: 100%;
-    margin: auto;
+}
+
+.cards__home{
+    margin: 4rem;
     display: flex;
 
     justify-content: space-around;

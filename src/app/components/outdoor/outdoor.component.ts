@@ -13,17 +13,21 @@ export class OutdoorComponent implements AfterViewInit, OnDestroy {
   public cont: number = 1;
   private intervalo: any;
   private radios: ElementRef<HTMLInputElement>[] = [];
+  private radioLabel: ElementRef<HTMLLabelElement>[] = [];
 
   @ViewChild('radio1') radio1!: ElementRef<HTMLInputElement>;
   @ViewChild('radio2') radio2!: ElementRef<HTMLInputElement>;
-  @ViewChild('radio2') radio3!: ElementRef<HTMLInputElement>;
+  @ViewChild('radioLabel1') radioLabel1!: ElementRef<HTMLLabelElement>;
+  @ViewChild('radioLabel2') radioLabel2!: ElementRef<HTMLLabelElement>;
 
   // ✅ Método principal organizado
   ngAfterViewInit(): void {
     this.inicializarRadio();
     this.iniciarCarrosselAutomatico();
-    this.radios = [this.radio1, this.radio2, this.radio3];
-    /*this.buscarElementosDOM();*/
+    this.radios = [this.radio1, this.radio2];
+    this.radioLabel = [this.radioLabel1, this.radioLabel2];
+    this.buscarElementosDOM();
+
   }
 
   // ✅ Função 1: Inicializar o radio
@@ -32,7 +36,7 @@ export class OutdoorComponent implements AfterViewInit, OnDestroy {
       this.radio1.nativeElement.checked = true;
       
       if (this.radio1.nativeElement.checked) {
-        console.log("✅ Input radio marcada com sucesso!");
+        console.log("✅ Input radio 1 marcada com sucesso!");
       } else {
         console.log("❌ Erro ao marcar o radio");
       }
@@ -40,12 +44,12 @@ export class OutdoorComponent implements AfterViewInit, OnDestroy {
   }
 
   // ✅ Função 2: Buscar elementos DOM (após renderização)
-  /*private buscarElementosDOM(): void {
-    this.radioElement = document.querySelector('.manual-btn');
-    if (this.radioElement) {
-      console.log("✅ Elemento .manual-btn encontrado!");
+  private buscarElementosDOM(): void {
+    if (this.radioLabel.length > 0) {
+      console.log(`✅ ${this.radioLabel.length} elementos encontrados via @ViewChild!`);
+      console.log(`${this.radioLabel1}`);
     }
-  }*/
+  }
 
   // ✅ Função 3: Iniciar carrossel automático
   private iniciarCarrosselAutomatico(): void {
@@ -58,26 +62,15 @@ export class OutdoorComponent implements AfterViewInit, OnDestroy {
   private proximaImg(): void {
     this.cont++;
     
-    if (this.cont > 3) {
+    if (this.cont > 2) {
       this.cont = 1;
     }
 
     this.radios[this.cont - 1].nativeElement.checked = true;
 
     console.log(`📸 Imagem ${this.cont} exibida`);
-    /*this.atualizarInterface();*/
-  }
-
-  /*// ✅ Função 5: Atualizar interface (opcional)
-  private atualizarInterface(): void {
-    // Atualiza o elemento manual-btn se existir
-    if (this.radios) {
-      this.radios.textContent = `Slide ${this.cont}`;
-    }
-    
-    // Aqui você pode adicionar mais lógica de UI
     this.marcarRadioAtual();
-  }*/
+  }
 
   // ✅ Função 6: Marcar radio correspondente (opcional)
   private marcarRadioAtual(): void {
