@@ -2,12 +2,12 @@
     position: relative;/*O posicionamento vai sr relativo as outros componentes, faendo com que o card sempre fique atras dos componentes filhos*/
     border-radius: 10px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.425);
-    width: 350px;
-    height: 500px;
+    width: 400px;
+    height: auto;
 
     display: flex;
     overflow: hidden;/*tudo que sair do tamanho da caixa ficará escondido*/
-    margin: 20px 0px;
+
 }
 
 .card__img{

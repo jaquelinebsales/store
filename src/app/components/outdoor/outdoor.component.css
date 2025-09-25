@@ -111,29 +111,3 @@ section.container__outdoor{
     color: rgb(94, 94, 94);
 }
 
-@media screen and (max-width: 1500px){
-    .img-1900px{
-        display: none;
-    }
-    .img-1500px{
-        display: block;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    .img-1500px{
-        display: none;
-    }
-    .img-1000px{
-        display: block;
-    }
-}
-
-@media screen and (max-width: 800px){
-    .img-1000px{
-        display: none;
-    }
-    .img-500px{
-        display: block;
-    }
-}
